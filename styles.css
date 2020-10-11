@@ -5,6 +5,7 @@
 body {
     margin: 0px;
     padding: 0px;
+    background-color: #bdc3c7;
 }
 
 header {
@@ -13,4 +14,31 @@ header {
 
 .main {
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.table {
+    width: 100vw;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 50vw;
+    border: 1px solid #666;
+}
+
+th, tr {
+    padding: 10px;
+    text-align: left;
+}
+
+tr:first-child {
+    padding: 5px;
+    font-weight: bold;
+    font-size: 1.25rem;
+    border-bottom: 1px solid black;
+}
+
+tr:nth-child(odd):not(:first-child) {
+    background-color: #DDD;
 }

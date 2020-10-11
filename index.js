@@ -9,7 +9,13 @@ function getInitialData() {
 }
 
 function log(data) {
-    console.log(data);
+    const tableRow = ``
+}
+
+function addTrTo(string) {
+    return `<tr>
+            ${string}
+            </tr>`
 }
 
 getInitialData();
