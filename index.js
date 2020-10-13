@@ -5,7 +5,7 @@ const container = $("#data-table");
 
 function getInitialData() {
     $.get(API_URL, function (data) {
-        log(data);
+        appendData(data);
     })
 }
 
