@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 * {
     box-sizing: border-box;
 }
@@ -21,10 +22,10 @@ header {
 .table {
     width: 100vw;
     margin: 0 auto;
+    margin-bottom: 50px;
     border-collapse: collapse;
     border-spacing: 0;
     width: 50vw;
-    border: 1px solid #666;
 }
 
 th, tr {
@@ -32,13 +33,17 @@ th, tr {
     text-align: left;
 }
 
-tr:first-child {
+td {
+    padding: 10px;
+}
+
+tr>th {
     padding: 5px;
     font-weight: bold;
     font-size: 1.25rem;
     border-bottom: 1px solid black;
 }
 
-tr:nth-child(odd):not(:first-child) {
-    background-color: #DDD;
+tr:nth-child(odd):not(.table-headers) {
+    background-color: #AAA;
 }
