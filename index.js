@@ -2,6 +2,7 @@
 
 const API_URL = "http://www.devcodecampmusiclibrary.com/api/music";
 const container = $("#data-table");
+const table = document.getElementById("data-table");
 
 function getInitialData() {
     $.get(API_URL, function (data) {
@@ -21,6 +22,7 @@ function appendData(data) {
         appendRow(tableRow);
     }
 
+    sorttable.makeSortable(table);
 }
 
 function appendRow(row) {
